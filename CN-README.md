@@ -1,37 +1,20 @@
-# CCXT – CryptoCurrency eXchange Trading Library
-
-# CCXT - 加密货币交易所交易接口库
+# CCXT - 加密货币交易所接口库
 
 [![Build Status](https://travis-ci.org/ccxt/ccxt.svg?branch=master)](https://travis-ci.org/ccxt/ccxt) [![npm](https://img.shields.io/npm/v/ccxt.svg)](https://npmjs.com/package/ccxt) [![PyPI](https://img.shields.io/pypi/v/ccxt.svg)](https://pypi.python.org/pypi/ccxt) [![NPM Downloads](https://img.shields.io/npm/dm/ccxt.svg)](https://www.npmjs.com/package/ccxt) [![NSP Status](https://nodesecurity.io/orgs/ccxt/projects/856d3088-8b46-4515-9324-6b7cd2470522/badge)](https://nodesecurity.io/orgs/ccxt/projects/856d3088-8b46-4515-9324-6b7cd2470522) [![Gitter](https://badges.gitter.im/ccxt-dev/ccxt.svg)](https://gitter.im/ccxt-dev/ccxt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Supported Exchanges](https://img.shields.io/badge/exchanges-115-blue.svg)](https://github.com/ccxt/ccxt/wiki/Exchange-Markets) [![Open Collective](https://opencollective.com/ccxt/backers/badge.svg)](https://opencollective.com/ccxt)
 
-A JavaScript / Python / PHP library for cryptocurrency trading and e-commerce with support for many bitcoin/ether/altcoin exchange markets and merchant APIs.
+一个用于加密货币电子化交易的 JavaScript / Python / PHP 库，支持诸多比特币/以太币/山寨币交易市场的交易 API.
 
 
-一个用于加密货币的电子化交易的 JavaScript / Python / PHP 库，支持诸多比特币/以太币/山寨币交易市场的交易 API.
-
-
-
-The **CCXT** library is used to connect and trade with cryptocurrency / altcoin exchanges and payment processing services worldwide. It provides quick access to market data for storage, analysis, visualization, indicator development, algorithmic trading, strategy backtesting, bot programming, webshop integration and related software engineering.
 
 **CCXT** 库可用于世界各地的加密货币/山寨币交易所的连接和交易，以及转账支付处理服务。它提供了快速访问市场数据的途径，可用于存储数据，分析，可视化，指标开发，算法交易，策略回测，机器人程序，网上商店集成及其它相关的软件工程。
 
 
-It is intended to be used by **coders, developers, technically-skilled traders, data-scientists and financial analysts** for building trading algorithms on top of it.    
 它可被**程序员，开发工程师，技术熟练的交易员，数据科学家和财务分析师**用于在其基础上构建交易算法。
 
-Current feature list:  
 当前具有的特性：
 
-- support for many exchange markets, even more upcoming soon
-- fully implemented public and private APIs for all exchanges
-- all currencies, altcoins and symbols, prices, order books, trades, tickers, etc...
-- optional normalized data for cross-exchange or cross-currency analytics and arbitrage
-- an out-of-the box unified all-in-one API extremely easy to integrate
-- works in Node 7.6+, Python 2 and 3, PHP 5.3+, web browsers      
 - 支持许多交易所，并将添加更多
-
 - 为上述交易所实现了全部公共和私有 API
-
 - 所有货币，山寨币和交易对，价格，订单簿，交易，行情等...
 - 可选的用于跨交易所或跨币种分析和套利的标准化数据
 - 一个非常容易集成的开箱即用的统一 API
@@ -41,10 +24,7 @@ Current feature list:
 
 [ccxt on GitHub](https://github.com/ccxt/ccxt) | [Install](#install) | [Usage](#usage) | [Manual](https://github.com/ccxt/ccxt/wiki) | [Examples](https://github.com/ccxt/ccxt/tree/master/examples) | [Changelog](https://github.com/ccxt/ccxt/blob/master/CHANGELOG.md) | [Contributing](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md)
 
-## Supported Cryptocurrency Exchange Markets  
-## 支持的加密货币交易市场 
-
-The ccxt library currently supports the following 115 cryptocurrency exchange markets and trading APIs:  
+## 支持的加密货币交易所 
 
 CCXT 库目前支持以下 115 个加密货币交易所的交易 API：
 
@@ -60,7 +40,6 @@ CCXT 库目前支持以下 115 个加密货币交易所的交易 API：
 |![binance](https://user-images.githubusercontent.com/1294454/29604020-d5483cdc-87ee-11e7-94c7-d1a8d9169293.jpg)            | binance            | [Binance](https://www.binance.com)                                           | *   | [API](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | 日本                                   |
 |![bit2c](https://user-images.githubusercontent.com/1294454/27766119-3593220e-5ece-11e7-8b3a-5a041f6bcc3f.jpg)              | bit2c              | [Bit2C](https://www.bit2c.co.il)                                             | *   | [API](https://www.bit2c.co.il/home/api)                                                      | 以色列                                  |
 |![bitbank](https://user-images.githubusercontent.com/1294454/37808081-b87f2d9c-2e59-11e8-894d-c1900b7584fe.jpg)            | bitbank            | [bitbank](https://bitbank.cc/)                                               | 1   | [API](https://docs.bitbank.cc/)                                                              | 日本                                   |
-
 |![bitbay](https://user-images.githubusercontent.com/1294454/27766132-978a7bd8-5ece-11e7-9540-bc96d1e9bbb8.jpg)             | bitbay             | [BitBay](https://bitbay.net)                                                 | *   | [API](https://bitbay.net/public-api)                                                         | 波兰, 欧盟                              |
 |![bitfinex](https://user-images.githubusercontent.com/1294454/27766244-e328a50c-5ed2-11e7-947b-041416579bb3.jpg)           | bitfinex           | [Bitfinex](https://www.bitfinex.com)                                         | 1   | [API](https://bitfinex.readme.io/v1/docs)                                                    | 英属维尔京群岛                  |
 |![bitfinex2](https://user-images.githubusercontent.com/1294454/27766244-e328a50c-5ed2-11e7-947b-041416579bb3.jpg)          | bitfinex2          | [Bitfinex v2](https://www.bitfinex.com)                                      | 2   | [API](https://bitfinex.readme.io/v2/docs)                                                    | 英属维尔京群岛                  |
@@ -168,42 +147,34 @@ CCXT 库目前支持以下 115 个加密货币交易所的交易 API：
 |![zaif](https://user-images.githubusercontent.com/1294454/27766927-39ca2ada-5eeb-11e7-972f-1b4199518ca6.jpg)               | zaif               | [Zaif](https://zaif.jp)                                                      | 1   | [API](http://techbureau-api-document.readthedocs.io/ja/latest/index.html)                    | 日本                                   |
 |![zb](https://user-images.githubusercontent.com/1294454/32859187-cd5214f0-ca5e-11e7-967d-96568e2e2bd1.jpg)                 | zb                 | [ZB](https://www.zb.com)                                                     | 1   | [API](https://www.zb.com/i/developer)                                                        | 中国                                   |
 
-The list above is updated frequently, new crypto markets, altcoin exchanges, bug fixes, API endpoints are introduced and added on a regular basis. See the [Manual](https://github.com/ccxt/ccxt/wiki) for details. If you don't find a cryptocurrency exchange market in the list above and/or want another exchange to be added, post or send us a link to it by opening an issue here on GitHub or via email.    
 上面的列表经常更新，新的加密货币市场，山寨币交易所，bug修复，API接口将定期被引入、添加。详细信息请参见[ 手册 ](https://github.com/ccxt/ccxt/wiki)。如果您没有在上面的列表中找到加密货币交易所并且/或者想要添加另一个交易所，请通过在GitHub上创建issue或或通过电子邮件向我们发送链接。
 
-The library is under [MIT license](https://github.com/ccxt/ccxt/blob/master/LICENSE.txt), that means it's absolutely free for any developer to build commercial and opensource software on top of it, but use it at your own risk with no warranties, as is.    
 本仓库使用[ MIT 许可](https://github.com/ccxt/ccxt/blob/master/LICENSE.txt)，这意味着任何开发人员都可以免费在其上构建商业和开源软件，但如果使用该软件，则风险自担，不作任何担保。
 
-## Install  
 ## 安装
 
-The easiest way to install the ccxt library is to use builtin package managers:    
 安装 CCXT 库的最简单方法是使用内置包管理器：
 
 - [ccxt in **NPM**](http://npmjs.com/package/ccxt) (JavaScript / Node v7.6+)
 - [ccxt in **PyPI**](https://pypi.python.org/pypi/ccxt) (Python 2 and 3.5.3+)
 - [ccxt in **Packagist/Composer**](https://packagist.org/packages/ccxt/ccxt) (PHP 5.3+)
 
-This library is shipped as an all-in-one module implementation with minimalistic dependencies and requirements:    
 本仓库提供一个整合的模块实现，具有最小依赖和要求：
 
 - [`js/`](https://github.com/ccxt/ccxt/blob/master/js/) in JavaScript
 - [`python/`](https://github.com/ccxt/ccxt/blob/master/python/) in Python (由 JS 生成)
 - [`php/`](https://github.com/ccxt/ccxt/blob/master/php/) in PHP (由 JS 生成)
 
-You can also clone it into your project directory from [ccxt GitHub repository](https://github.com/ccxt/ccxt):    
 您也可以从[ CCXT GitHub 仓库](https://github.com/ccxt/ccxt)中将它克隆到您的项目目录中
 
 ```shell
 git clone https://github.com/ccxt/ccxt.git
 ```
 
-An alternative way of installing this library into your code is to copy a single file manually into your working directory with language extension appropriate for your environment.    
 将该库集成到代码中的另一种方法，是将单个文件手动复制到您的工作目录中，并使用适合您环境的语言扩展。
 
 ### JavaScript (NPM)
 
-JavaScript version of CCXT works both in Node and web browsers. Requires ES6 and `async/await` syntax support (Node 7.6.0+). When compiling with Webpack and Babel, make sure it is [not excluded](https://github.com/ccxt/ccxt/issues/225#issuecomment-331905178) in your `babel-loader` config.    
 CCXT的JavaScript版本在Node和Web浏览器中均可以使用。需要 ES6 和 `async/await` 语法支持( Node 7.6.0+ )。在使用Webpack和Babel进行编译时，请确保它不会在您的 `babel-loader` 配置中[被排除](https://github.com/ccxt/ccxt/issues/225#issuecomment-331905178)。
 
 [ccxt in **NPM**](http://npmjs.com/package/ccxt)
@@ -218,8 +189,6 @@ var ccxt = require ('ccxt')
 console.log (ccxt.exchanges) // print all available exchanges
 ```
 
-### JavaScript (for use with the `<script>` tag):      
-[All-in-one browser bundle](https://unpkg.com/ccxt) (dependencies included), served from [unpkg CDN](https://unpkg.com/), which is a fast, global content delivery network for everything on NPM.
 ### JavaScript（与 <script> 标签一起使用）：    
 包含所有功能于一身的浏览器软件包（包括依赖项），由 [unpkg CDN](https://unpkg.com/) 提供。[unpkg CDN](https://unpkg.com/) 是一个快速的全球内容交付网络，适用于NPM上的所有内容。
 
@@ -227,7 +196,6 @@ console.log (ccxt.exchanges) // print all available exchanges
 <script type="text/javascript" src="https://unpkg.com/ccxt"></script>
 ```
 
-Creates a global `ccxt` object:    
 创建一个全局的 `ccxt` 对象： 
 
 ```JavaScript
@@ -247,7 +215,6 @@ import ccxt
 print(ccxt.exchanges) # print a list of all available exchange classes
 ```
 
-The library supports concurrent asynchronous mode with asyncio and async/await in Python 3.5.3+     
 本仓库支持在Python 3.5.3+中使用asyncio和async / await进行异步并发模式
 
 ```Python
@@ -255,10 +222,6 @@ import ccxt.async as ccxt # link against the asynchronous version of ccxt
 ```
 
 ### PHP
-
-The ccxt library in PHP: [**`ccxt.php`**](https://raw.githubusercontent.com/ccxt/ccxt/master/ccxt.php)
-
-It requires common PHP modules:    
 
 PHP版的[** CCXT 库**](https://raw.githubusercontent.com/ccxt/ccxt/master/ccxt.php)    
 
@@ -274,30 +237,15 @@ include "ccxt.php";
 var_dump (\ccxt\Exchange::$exchanges); // print a list of all available exchange classes
 ```
 
-## Documentation  
 ## 文档
 
 Read the [Manual](https://github.com/ccxt/ccxt/wiki) for more details.    
 阅读[操作手册](https://github.com/ccxt/ccxt/wiki)以获得更多详细信息。
 
-## Usage  
 ## 使用指南
 
-### Intro  
 #### 介绍
 
-The ccxt library consists of a public part and a private part. Anyone can use the public part out-of-the-box immediately after installation. Public APIs open access to public information from all exchange markets without registering user accounts and without having API keys.
-
-Public APIs include the following:
-
-- market data
-- instruments/trading pairs
-- price feeds (exchange rates)
-- order books
-- trade history
-- tickers
-- OHLC(V) for charting
-- other public endpoints    
 
 CCXT 库由公共接口部分和私有接口部分组成。任何人都可以在安装后立即使用公共部分。公共 API 具有获取所有交易所公开信息的权限，无需注册用户账户，也无需 API 密钥。  
 公共 API 包括以下内容：  
@@ -312,19 +260,6 @@ CCXT 库由公共接口部分和私有接口部分组成。任何人都可以在
 - 其他公共接口
 
 
-For trading with private APIs you need to obtain API keys from/to exchange markets. It often means registering with exchanges and creating API keys with your account. Most exchanges require personal info or identification. Some kind of verification may be necessary as well. If you want to trade you need to register yourself, this library will not create accounts or API keys for you. Some exchange APIs expose interface methods for registering an account from within the code itself, but most of exchanges don't. You have to sign up and create API keys with their websites.
-
-Private APIs allow the following:
-
-- manage personal account info
-- query account balances
-- trade by making market and limit orders
-- deposit and withdraw fiat and crypto funds
-- query personal orders
-- get ledger history
-- transfer funds between accounts
-- use merchant services    
-
 对于通过私有 API 进行交易，您需要从交易所获取 API 密钥。它通常意味着在交易所注册，并使用您的账户创建 API 密钥。大多数交易所需要个人信息或身份证明。其他验证材料也可能是必要的。如果你想要交易，你需要自己注册，这个库不会为你创建账户或 API 密钥。一些交易所 API 提供了用代码本身注册帐户的接口，但大多数交易所并没有。因此您必须注册并在网站上创建 API 密钥。
 
 私有API允许以下内容：
@@ -338,10 +273,8 @@ Private APIs allow the following:
 - 在账户之间转移资金
 - 使用商业服务
 
-This library implements full public and private REST APIs for all exchanges. WebSocket and FIX implementations in JavaScript, PHP, Python and other languages coming soon.    
 本仓库实现了所有交易所的公共和私有REST API。JavaScript，PHP，Python及其他语言的WebSocket实现和FIX将尽快推出。
 
-The ccxt library supports both camelcase notation (preferred in JavaScript) and underscore notation (preferred in Python and PHP), therefore all methods can be called in either notation or coding style in any language.    
 CCXT 库同时支持驼峰命名法(常用于 JavaScript)和下划线命名法(常用于 Python 和 PHP)，因此在任意一种语言中，两种命名法/编码风格均可调用所有方法。
 
 ```
@@ -351,7 +284,6 @@ exchange.methodName ()  // camelcase pseudocode 驼峰命名法
 exchange.method_name () // underscore pseudocode 下划线命名法
 ```
 
-Read the [Manual](https://github.com/ccxt/ccxt/wiki) for more details.    
 阅读 [指南](https://github.com/ccxt/ccxt/wiki)以获得更多详细信息。
 
 ### JavaScript
@@ -474,27 +406,19 @@ var_dump ($zaif->id, $zaif->create_limit_buy_order ('BTC/JPY', 1, 285000));
 $hitbtc->create_order ('BTC/USD', 'limit', 'buy', 1, 3000, array ('clientOrderId' => '123'));
 ```
 
-## Contributing
 ## 贡献力量
-
-Please read the [CONTRIBUTING](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md) document before making changes that you would like adopted in the code. Also, read the [Manual](https://github.com/ccxt/ccxt/wiki) for more details.      
     
 在您做出一些修改并希望合并进代码之前，请阅读 [贡献 / CONTRIBUTING](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md) 文档。 另外，您可通过阅读 [指南] (https://github.com/ccxt/ccxt/wiki) 来获取更多详细信息.
 
 
-## Support Developer Team
 ## 支持开发团队
 
-We are investing a significant amount of time into the development of this library. If CCXT made your life easier and you like it and want to help us improve it further or if you want to speed up new features and exchanges, please, support us with a tip. We appreciate all contributions!    
 我们对此仓库的开发正在投入大量的时间。如果 CCXT 使得您的生活更加简单，并且您喜欢它，并希望帮助我们进一步改进它，或者如果您想加快开发新功能和交易所，请通过小费支持我们。我们感谢所有的支持！
 
-### Sponsors
 ### 赞助商
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.    
 通过成为赞助商支持本项目，您的 logo 将会展现在这里，并附带您的网站链接。
 
-[[Become a sponsor](https://opencollective.com/ccxt#sponsor)]  
 [[成为赞助商](https://opencollective.com/ccxt#sponsor)]
 
 <a href="https://opencollective.com/ccxt/sponsor/0/website" target="_blank"><img src="https://opencollective.com/ccxt/sponsor/0/avatar.svg"></a>
@@ -508,15 +432,12 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/ccxt/sponsor/8/website" target="_blank"><img src="https://opencollective.com/ccxt/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/ccxt/sponsor/9/website" target="_blank"><img src="https://opencollective.com/ccxt/sponsor/9/avatar.svg"></a>
 
-### Backers
 ### 支持者
 
-Thank you to all our backers! [[Become a backer](https://opencollective.com/ccxt#backer)]    
 谢谢我们所有的支持者! [[成为支持者](https://opencollective.com/ccxt#backer)]
 
 <a href="https://opencollective.com/ccxt#backers" target="_blank"><img src="https://opencollective.com/ccxt/backers.svg?width=890"></a>
 
-### Crypto    
 ### 加密货币捐助地址
 
 ```
@@ -525,8 +446,7 @@ BTC 33RmVRfhK2WZVQR1R83h2e9yXoqRNDvJva
 BCH 1GN9p233TvNcNQFthCgfiHUnj5JRKEc2Ze
 LTC LbT8mkAqQBphc4yxLXEDgYDfEax74et3bP
 ```
-
-Thank you!    
+    
 谢谢！
 
 ### 中文社区资源
