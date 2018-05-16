@@ -20,7 +20,7 @@
 - 一个非常容易集成的开箱即用的统一 API
 - 可在 Node 7.6+，Python 2 和 3，PHP 5.3+ 及 Web 浏览器中使用    
 
-[CCXT on GitHub ](https://github.com/ccxt/ccxt) | [安装](#install) | [使用](#usage) | [指南](https://github.com/ccxt/ccxt/wiki) | [范例](https://github.com/ccxt/ccxt/tree/master/examples) | [更新日志](https://github.com/ccxt/ccxt/blob/master/CHANGELOG.md) | [贡献](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md)
+[CCXT on GitHub ](https://github.com/ccxt/ccxt) | [安装](#安装) | [使用方法](#使用方法) | [指南](https://github.com/ccxt/ccxt/wiki) | [范例](https://github.com/ccxt/ccxt/tree/master/examples) | [更新日志](https://github.com/ccxt/ccxt/blob/master/CHANGELOG.md) | [贡献](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md)
 
 
 ## 支持的加密货币交易所 
@@ -227,20 +227,20 @@ PHP版的 CCXT 库：[ccxt.php](https://raw.githubusercontent.com/ccxt/ccxt/mast
 它需要以下PHP模块：
 
 - cURL
-- mbstring (using UTF-8 is highly recommended)
+- mbstring (强烈推荐使用 UTF-8 )
 - PCRE
 - iconv
 
 ```PHP
 include "ccxt.php";
-var_dump (\ccxt\Exchange::$exchanges); // print a list of all available exchange classes
+var_dump (\ccxt\Exchange::$exchanges); // 打印所有支持的交易所
 ```
 
 ## 文档
 
 阅读[操作手册](https://github.com/ccxt/ccxt/wiki)以获得更多详细信息。
 
-## 使用指南
+## 使用方法
 
 #### 介绍
 
@@ -389,7 +389,7 @@ var_dump ($zaif->id, $zaif->create_market_sell_order ('BTC/JPY', 1));
 // 买入 BTC/JPY, 当该订单成交时，你会以 ¥285000 日元的价格收到 1BTC 
 var_dump ($zaif->id, $zaif->create_limit_buy_order ('BTC/JPY', 1, 285000));
 
-// 为你的订单 设置一个用户自定义的 id    
+// 为你的订单设置一个用户自定义的 id    
 $hitbtc->create_order ('BTC/USD', 'limit', 'buy', 1, 3000, array ('clientOrderId' => '123'));
 ```
 
