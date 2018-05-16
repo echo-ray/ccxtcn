@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ccxt/ccxt.svg?branch=master)](https://travis-ci.org/ccxt/ccxt) [![npm](https://img.shields.io/npm/v/ccxt.svg)](https://npmjs.com/package/ccxt) [![PyPI](https://img.shields.io/pypi/v/ccxt.svg)](https://pypi.python.org/pypi/ccxt) [![NPM Downloads](https://img.shields.io/npm/dm/ccxt.svg)](https://www.npmjs.com/package/ccxt) [![NSP Status](https://nodesecurity.io/orgs/ccxt/projects/856d3088-8b46-4515-9324-6b7cd2470522/badge)](https://nodesecurity.io/orgs/ccxt/projects/856d3088-8b46-4515-9324-6b7cd2470522) [![Gitter](https://badges.gitter.im/ccxt-dev/ccxt.svg)](https://gitter.im/ccxt-dev/ccxt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Supported Exchanges](https://img.shields.io/badge/exchanges-115-blue.svg)](https://github.com/ccxt/ccxt/wiki/Exchange-Markets) [![Open Collective](https://opencollective.com/ccxt/backers/badge.svg)](https://opencollective.com/ccxt)
 
-一个用于加密货币电子化交易的 JavaScript / Python / PHP 库，支持诸多比特币/以太币/山寨币交易市场的交易 API.
+一个用于加密货币电子化交易的 JavaScript / Python / PHP 库，支持诸多比特币/以太币/山寨币交易市场的交易 API 。
 
 
 
@@ -22,7 +22,6 @@
 
 [CCXT on GitHub ](https://github.com/ccxt/ccxt) | [安装](#install) | [使用](#usage) | [指南](https://github.com/ccxt/ccxt/wiki) | [范例](https://github.com/ccxt/ccxt/tree/master/examples) | [更新日志](https://github.com/ccxt/ccxt/blob/master/CHANGELOG.md) | [贡献](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md)
 
-[ccxt on GitHub](https://github.com/ccxt/ccxt) | [Install](#install) | [Usage](#usage) | [Manual](https://github.com/ccxt/ccxt/wiki) | [Examples](https://github.com/ccxt/ccxt/tree/master/examples) | [Changelog](https://github.com/ccxt/ccxt/blob/master/CHANGELOG.md) | [Contributing](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md)
 
 ## 支持的加密货币交易所 
 
@@ -190,7 +189,7 @@ console.log (ccxt.exchanges) // print all available exchanges
 ```
 
 ### JavaScript（与 <script> 标签一起使用）：    
-包含所有功能于一身的浏览器软件包（包括依赖项），由 [unpkg CDN](https://unpkg.com/) 提供。[unpkg CDN](https://unpkg.com/) 是一个快速的全球内容交付网络，适用于NPM上的所有内容。
+包含所有功能于一身的浏览器软件包（包括依赖项），由 [unpkg CDN](https://unpkg.com/) 提供。[unpkg CDN](https://unpkg.com/) 是一个快速的全球性的内容分发网络，适用于NPM上的所有内容。
 
 ```HTML
 <script type="text/javascript" src="https://unpkg.com/ccxt"></script>
@@ -223,7 +222,7 @@ import ccxt.async as ccxt # link against the asynchronous version of ccxt
 
 ### PHP
 
-PHP版的[** CCXT 库**](https://raw.githubusercontent.com/ccxt/ccxt/master/ccxt.php)    
+PHP版的 CCXT 库：[ccxt.php](https://raw.githubusercontent.com/ccxt/ccxt/master/ccxt.php)    
 
 它需要以下PHP模块：
 
@@ -239,7 +238,6 @@ var_dump (\ccxt\Exchange::$exchanges); // print a list of all available exchange
 
 ## 文档
 
-Read the [Manual](https://github.com/ccxt/ccxt/wiki) for more details.    
 阅读[操作手册](https://github.com/ccxt/ccxt/wiki)以获得更多详细信息。
 
 ## 使用指南
@@ -278,10 +276,9 @@ CCXT 库由公共接口部分和私有接口部分组成。任何人都可以在
 CCXT 库同时支持驼峰命名法(常用于 JavaScript)和下划线命名法(常用于 Python 和 PHP)，因此在任意一种语言中，两种命名法/编码风格均可调用所有方法。
 
 ```
-// both of these notations work in JavaScript/Python/PHP
 // 以下两种格式在JavaScript/Python/PHP下均有效    
-exchange.methodName ()  // camelcase pseudocode 驼峰命名法  
-exchange.method_name () // underscore pseudocode 下划线命名法
+exchange.methodName ()  //  驼峰命名法  
+exchange.method_name () //  下划线命名法
 ```
 
 阅读 [指南](https://github.com/ccxt/ccxt/wiki)以获得更多详细信息。
@@ -311,18 +308,14 @@ const ccxt = require ('ccxt');
 
     console.log (okcoinusd.id, await okcoinusd.fetchBalance ())
 
-    // sell 1 BTC/USD for market price, sell a bitcoin for dollars immediately
-    // 以市价卖出 1BTC，并立马得到1比特币等值的欧元
+    // 以市价卖出 1BTC，并立马得到1比特币等值的欧元
     console.log (okcoinusd.id, await okcoinusd.createMarketSellOrder ('BTC/USD', 1))
 
-    // buy 1 BTC/USD for $2500, you pay $2500 and receive ฿1 when the order is closed
-    // 以 $2500 购买 BTC/USD, 当该订单成交时，你会付出 €2500 美金并获得 1BTC 
+    // 以 $2500 购买 1 BTC, 当该订单成交时，你会付出 $2500 美金并获得 1BTC 
     console.log (okcoinusd.id, await okcoinusd.createLimitBuyOrder ('BTC/USD', 1, 2500.00))
 
-    // pass/redefine custom exchange-specific order params: type, amount, price or whatever
-    // 传递/重定义特定交易所的订单自定义参数：类型，数量，价格 等等
-    // use a custom order type
-    // 使用一个交易所私有的订单类型
+    // 传递/重定义特定交易所的订单自定义参数：类型，数量，价格 等等
+    // 使用一个交易所专有的订单类型
     bitfinex.createLimitSellOrder ('BTC/USD', 1, 10, { 'type': 'trailing-stop' })
 }) ();
 ```
@@ -354,15 +347,12 @@ print(huobi.fetch_trades('LTC/CNY'))
 
 print(exmo.fetch_balance())
 
-# sell one ฿ for market price and receive $ right now    
 # 以市价卖出 1BTC，并立马得到美元现金
 print(exmo.id, exmo.create_market_sell_order('BTC/USD', 1))
 
-# limit buy BTC/EUR, you pay €2500 and receive ฿1  when the order is closed    
 # 限价买入 BTC/EUR, 当该订单成交时，你会以 €2500 欧元的价格收到 1BTC 
 print(exmo.id, exmo.create_limit_buy_order('BTC/EUR', 1, 2500.00))
 
-# pass/redefine custom exchange-specific order params: type, amount, price, flags, etc...    
 # 传递/重定义特定交易所的订单自定义参数：类型，数量，价格，flags 等等
 kraken.create_market_buy_order('BTC/USD', 1, {'trading_agreement': 'agree'})
 ```
@@ -393,22 +383,19 @@ var_dump ($zaif->fetch_ticker ('BTC/JPY'));
 
 var_dump ($zaif->fetch_balance ());
 
-// sell 1 BTC/JPY for market price, you pay ¥ and receive ฿ immediately    
 // 以市价卖出 1 BTC/JPY，你将会立即卖出比特币并收到日元
 var_dump ($zaif->id, $zaif->create_market_sell_order ('BTC/JPY', 1));
 
-// buy BTC/JPY, you receive ฿1 for ¥285000 when the order closes
 // 买入 BTC/JPY, 当该订单成交时，你会以 ¥285000 日元的价格收到 1BTC 
 var_dump ($zaif->id, $zaif->create_limit_buy_order ('BTC/JPY', 1, 285000));
 
-// set a custom user-defined id to your order    
-// 为你的 order / 订单 设置一个用户自定义的 id    
+// 为你的订单 设置一个用户自定义的 id    
 $hitbtc->create_order ('BTC/USD', 'limit', 'buy', 1, 3000, array ('clientOrderId' => '123'));
 ```
 
 ## 贡献力量
     
-在您做出一些修改并希望合并进代码之前，请阅读 [贡献 / CONTRIBUTING](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md) 文档。 另外，您可通过阅读 [指南] (https://github.com/ccxt/ccxt/wiki) 来获取更多详细信息.
+在您做出一些修改并希望合并进代码之前，请阅读 [贡献](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md) 文档。 另外，您可通过阅读 [指南](https://github.com/ccxt/ccxt/wiki) 来获取更多详细信息.
 
 
 ## 支持开发团队
@@ -449,7 +436,7 @@ LTC LbT8mkAqQBphc4yxLXEDgYDfEax74et3bP
     
 谢谢！
 
-### 中文社区资源
+## 中文社区资源
 - [CCXTCN](https://github.com/bilibilihuangyifan/ccxtcn) 是 CCXT 文档中文翻译项目，开始于 2018.05.14，欢迎加入我们一起完成这个项目。
 - CCXT 中文文档翻译 QQ 群：749640693
 - CCXT 使用问题交流 QQ 群：150134435
