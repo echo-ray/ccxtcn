@@ -185,7 +185,7 @@ npm install ccxt
 ```JavaScript
 var ccxt = require ('ccxt')
 
-console.log (ccxt.exchanges) // print all available exchanges
+console.log (ccxt.exchanges) // 打印所有支持的交易所
 ```
 
 ### JavaScript（与 <script> 标签一起使用）：    
@@ -198,7 +198,7 @@ console.log (ccxt.exchanges) // print all available exchanges
 创建一个全局的 `ccxt` 对象： 
 
 ```JavaScript
-console.log (ccxt.exchanges) // print all available exchanges
+console.log (ccxt.exchanges) // 打印所有支持的交易所
 ```
 
 ### Python
@@ -211,13 +211,13 @@ pip install ccxt
 
 ```Python
 import ccxt
-print(ccxt.exchanges) # print a list of all available exchange classes
+print(ccxt.exchanges) # 打印一个包含所有支持交易所的列表
 ```
 
 本仓库支持在Python 3.5.3+中使用asyncio和async / await进行异步并发模式
 
 ```Python
-import ccxt.async as ccxt # link against the asynchronous version of ccxt
+import ccxt.async as ccxt # 链接到异步版本的ccxt
 ```
 
 ### PHP
