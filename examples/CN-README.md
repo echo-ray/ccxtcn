@@ -122,4 +122,4 @@ It uses the [asciichart](https://github.com/kroitor/asciichart) JavaScript modul
 ![asciichart](https://cloud.githubusercontent.com/assets/1294454/22818709/9f14e1c2-ef7f-11e6-978f-34b5b595fb63.png)
 
 Special thx to [MitchTalmadge](https://github.com/MitchTalmadge) for porting this package to Java language! Java-people, check it out here: [ASCIIGraph](https://github.com/MitchTalmadge/ASCIIGraph).    
-特别感谢将此软件包移植到 Java 语言的[MitchTalmadge](https://github.com/MitchTalmadge)。Java 用户请看这里：[ASCIIGraph](https://github.com/MitchTalmadge/ASCIIGraph)。
+特别感谢将此软件包移植到 Java 语言的[ MitchTalmadge ](https://github.com/MitchTalmadge)。Java 用户请看这里：[ASCIIGraph](https://github.com/MitchTalmadge/ASCIIGraph)。
