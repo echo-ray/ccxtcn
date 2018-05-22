@@ -5,7 +5,7 @@
 ## 我试图运行代码，但它不工作，我该如何解决？
 
 If your question is formulated in a short manner like the above, we won't help. We don't teach programming. If you're unable to read and understand the [Manual](https://github.com/ccxt/ccxt/wiki) or you can't follow the guides from the [CONTRIBUTING](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md) doc on how to report an issue, we won't help either. Read the Manual. You should not risk money and time without reading the entire Manual very carefully. Namely, when asking a question:  
-如果你的问题是像上述那样简短的话，我们将无法提供帮忙。我们不教授编程。如果您无法阅读并理解[ 本手册 ](https://github.com/ccxt/ccxt/wiki)，或者没有依照[贡献](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md)文档中关于如何反馈问题的指南，我们也无法提供帮助。请首先阅读手册。在没有仔细阅读整手册的情况下，您不应该冒险花费金钱和时间。在提出一个问题（ Issue ）前：  
+如果你的问题是像上述那样简短的话，我们将无法提供帮忙。我们不教授编程。如果您无法阅读并理解[ 本手册 ](https://github.com/ccxt/ccxt/wiki)，或者没有依照[贡献](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md)文档中关于如何反馈问题的指南，我们也无法提供帮助。请首先阅读手册。在没有仔细阅读整手册的情况下，您不应该冒险地投入金钱和时间。换句话说，在提出一个问题（ Issue ）前：  
 - Use the search button for duplicates first!
 - 首先使用搜索按钮查看是否有重复项 / 已提出的类似Issue。
 - **Post your output in verbose mode!** It's written and mentioned everywhere, in the [Troubleshooting](https://github.com/ccxt/ccxt/wiki/Manual#troubleshooting) section, in the [README](https://github.com/ccxt/ccxt/blob/master/README.md) and in many answers to similar questions among [previous issues](https://github.com/ccxt/ccxt/issues) and [pull requests](https://github.com/ccxt/ccxt/pulls).
@@ -21,7 +21,7 @@ If your question is formulated in a short manner like the above, we won't help. 
 ## 我正在调用一个方法，并且出现错误，我做错了什么？
 
 You're not reporting the issue properly ) Please, help the community to help you ) Read this and follow the steps: https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md#how-to-submit-an-issue    
-您没有以正确的方式反馈问题，请阅读本文并按照以下步骤操作，以便社区能够提供帮助：
+您没有以正确的方式反馈问题，请阅读本文并按照以下步骤操作，以便社区能够提供帮助：
 https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md#how-to-submit-an-issue
 
 
@@ -29,8 +29,8 @@ https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md#how-to-submit-an-issue
 ## 你们可以实现某交易所的某种特性 / 方法吗？
 
 Yes, we can. And we will, if nobody else does that before us. There's very little point in asking this type of questions, because the answer is always positive. When someone asks if we can do this or that, the question is not about our abilities, it all boils down to time and management needed for implementing all accumulated feature requests. Moreover, this is an open-source library which is a work in progress. This means, that this project is intended to be developed by the community of users, who are using it. All contributions are welcome! What you're asking is not whether we can or cannot implement it, in fact you're actually telling us to go do that particular task and this is not how we see a voluntary collaboration.    
-是的，我们可以。如果没有其他人在我们面前这样做，我们会做的。询问这种问题几乎没有意义，因为答复往往是积极的。当有人问我们是否可以做到这样或者那样，其实问题不在于我们的能力，而在于实现所有累积的特性请求所需的时间和管理。
-另外，这是一个还处于开发中的开源仓库。这意味着，该项目旨在由正在使用它的用户社区开发，我们欢迎任何贡献！你所问的不是我们是否能够实现它，事实上你是在具体的告诉我们要去做某个特定的，这不是我们希望看到志愿协作的方式。
+是的，可以实现。如果没有其他人在我们之前完成这个特性，我们会完成它。询问这种问题几乎没有意义，因为答复往往是肯定的。当有人问我们是否可以做到这样或者那样，症结不在于我们的能力，而在于实现所有累积的特性请求所需的时间和管理工作。
+另外，这是一个还处于开发中的开源项目。这意味着，该项目旨在由正在使用它的社区用户进行开发，我们欢迎任何贡献！你所问的不是我们是否能够实现它，事实上你是在具体的告诉我们要去做某个特定的任务，这不是我们希望看到的志愿协作方式。
 
 ## When will you add feature `foo` for exchange `bar` ? What's the estimated time? When should we expect this?
 ## 你们什么时候可以为某交易所添加某种特性 / 方法？预计什么时候？我们什么时候可以看到它？
