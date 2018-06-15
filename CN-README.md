@@ -25,7 +25,7 @@
 
 ## 支持的加密货币交易所 
 
-CCXT 库目前支持以下 115 个加密货币交易所的交易 API：
+CCXT 库目前支持以下 115 个加密货币交易所市场及其交易 API：
 
 
 |                                                                                                                           | id                 | 名称                                                                         | 版本 | 文档                                                                                          | 国家/地区                               |
@@ -138,7 +138,7 @@ CCXT 库目前支持以下 115 个加密货币交易所的交易 API：
 |![urdubit](https://user-images.githubusercontent.com/1294454/27991453-156bf3ae-6480-11e7-82eb-7295fe1b5bb4.jpg)            | urdubit            | [UrduBit](https://urdubit.com)                                               | 1   | [API](https://blinktrade.com/docs)                                                           | 巴基斯坦                                |
 |![vaultoro](https://user-images.githubusercontent.com/1294454/27766880-f205e870-5ee9-11e7-8fe2-0d5b15880752.jpg)           | vaultoro           | [Vaultoro](https://www.vaultoro.com)                                         | 1   | [API](https://api.vaultoro.com)                                                              | 瑞士                             |
 |![vbtc](https://user-images.githubusercontent.com/1294454/27991481-1f53d1d8-6481-11e7-884e-21d17e7939db.jpg)               | vbtc               | [VBTC](https://vbtc.exchange)                                                | 1   | [API](https://blinktrade.com/docs)                                                           | 越南                                 |
-|![virwox](https://user-images.githubusercontent.com/1294454/27766894-6da9d360-5eea-11e7-90aa-41f2711b7405.jpg)             | virwox             | [VirWoX](https://www.virwox.com)                                             | *   | [API](https://www.virwox.com/developers.php)                                                 | 澳大利亚, 欧盟                             |
+|![virwox](https://user-images.githubusercontent.com/1294454/27766894-6da9d360-5eea-11e7-90aa-41f2711b7405.jpg)             | virwox             | [VirWoX](https://www.virwox.com)                                             | *   | [API](https://www.virwox.com/developers.php)                                                 | 奥地利, 欧盟                             |
 |![wex](https://user-images.githubusercontent.com/1294454/30652751-d74ec8f8-9e31-11e7-98c5-71469fcef03e.jpg)                | wex                | [WEX](https://wex.nz)                                                        | 3   | [API](https://wex.nz/api/3/docs)                                                             | 新西兰                             |
 |![xbtce](https://user-images.githubusercontent.com/1294454/28059414-e235970c-662c-11e7-8c3a-08e31f78684b.jpg)              | xbtce              | [xBTCe](https://www.xbtce.com)                                               | 1   | [API](https://www.xbtce.com/tradeapi)                                                        | 俄罗斯                                  |
 |![yobit](https://user-images.githubusercontent.com/1294454/27766910-cdcbfdae-5eea-11e7-9859-03fea873272d.jpg)              | yobit              | [YoBit](https://www.yobit.net)                                               | 3   | [API](https://www.yobit.net/en/api/)                                                         | 俄罗斯                                  |
